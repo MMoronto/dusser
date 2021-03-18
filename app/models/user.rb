@@ -8,6 +8,6 @@ class User < ApplicationRecord
     end
 
     def comments
-        comments = " To many MC's, not enough mics."
+        comments = " Too many MC's, not enough mics."
     end
 end

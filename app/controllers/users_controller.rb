@@ -6,26 +6,26 @@ class UsersController < ApplicationController
         render 'users/new'
     end
 
-    #POST /users
+    # #POST /users
     def create
         @user = User.new(user_params)
         
     end    
 
-    #GET /users/1/edit
-    def edit
-    end
+    # #GET /users/1/edit
+    # def edit
+    # end
 
-    #PATCH/PUT /users/1
-    def update
-        @user = User.new
+    # #PATCH/PUT /users/1
+    # def update
+    #     @user = User.new
         
-    end    
+    # end    
 
-    #DELETE /users/1
-    def destroy
-        @user.destroy
-        render 'users/new'
-    end
+    # #DELETE /users/1
+    # def destroy
+    #     @user.destroy
+    #     render 'users/new'
+    # end
 
 end
