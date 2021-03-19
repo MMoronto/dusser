@@ -1,5 +1,5 @@
-<h3>Home</h3>
-<p><b>Welcome to the home of:</b> <%= @user.name %>.</p>
+<h3>Create a New Style</h3>
+<p><b>Name:</b> <%= @user.name %>.</p>
 <p><b>My Most Recent Style was:</b> <%= @user.style %></p>
 <p><b>My Unfiltered Assesment:</b> <%= @user.comments %></p>
-<button><b>Enter New Style</b></button>
+<button href='<%= "/hairstyles/#{hairstyle.style}"'><b>Save New Style</b></button>
