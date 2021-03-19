@@ -1,0 +1,8 @@
+<h3>Home</h3>
+<p><b>Welcome to the home of:</b> <%= @user.name %>.</p>
+<p><b>My Most Recent Style was:</b> <%= @user.style %></p>
+<p><b>Here is a list of my past styles:</b></p>
+<%= @hairstyles.each do |hairstyle| %>
+    <div><a href='<%= "/hairstyles/#{hairstyle.id}" %>'></a></div>
+<% end %>
+<button><b>Add New Style</b></button>
