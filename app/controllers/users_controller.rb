@@ -12,6 +12,12 @@ class UsersController < ApplicationController
         
     end    
 
+    #GET /users/1/show
+    def show
+        @user = User.find(params[2])
+        render 'users/show'
+    end
+
     # #GET /users/1/edit
     # def edit
     # end

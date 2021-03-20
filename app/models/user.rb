@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+    has_many :hairstyles
+    
     def name
         name = "Colono Scopy"
     end
