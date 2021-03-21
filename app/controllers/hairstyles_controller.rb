@@ -1,5 +1,5 @@
 class HairstylesController < ApplicationController
-    before_action :sethairstyle, only: %i[show edit update destroy]
+    before_action :sethairstyle, only: %i[index show edit update destroy]
     #GET /hairstyles/new
     def new
         @hairstyle = Hairstyle.new
