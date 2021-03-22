@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :setuser, only: %i[show edit update destroy]
+    before_action :set_user, only: [:show, :edit, :update, :destroy]
     #GET /users/new
     def new
         @user = User.new
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
     #GET /users/1/show
     def show
-        @user = User.find(params[2])
+        @user = User.find(params[:id])
         render 'users/show'
     end
 
